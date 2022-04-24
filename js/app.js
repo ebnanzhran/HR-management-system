@@ -78,7 +78,10 @@ let emp5=new Employee("1005","Omar Zaid","Development","Senior","./assest/Omar.j
 let emp6=new Employee("1006","Rana Saleh","Development","Jonior","./assest/Rana.jpg")
 let emp7=new Employee("1007","Hadi Ahmad","Finance","Mid-Senior","./assest/Hadi.jpg")
 
-
+for(let i=0 ; i<allEmp.length ; i++){
+    allEmp[i].NewSalary11();
+    allEmp[i].render();
+}
 let btn=document.getElementById("submit")
 btn.addEventListener("click",alt)
 let id=1007;
@@ -96,14 +99,12 @@ function alt(){
     let salary = Employee.prototype.NewSalary11();
       id++;
       let newEmployee = new Employee(id, nameCard, dept, level, img, salary);
-      allEmp.push(newEmployee)
+      // allEmp.push(newEmployee)
       // allEmp.push("Employee",{id:id,Name:nameCard,department:dept,Level:level,image:img,Salary:salary})
         //  newEmployee.render()
         // allEmp.push({newEmployee})
-        for(let i=0 ; i<allEmp.length ; i++){
-          allEmp[i].NewSalary11();
-          allEmp[i].render();
-      }
+        // allEmp.render()
+        console.log(newEmployee);
 }
 
 // function showEmp(arr){
