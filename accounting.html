@@ -4,17 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/index.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./accounting.css">   
 </head>
 <body>
+
+    <header>
+            <a href="./index.html" id="home">Home</a> 
+            <a href="./accounting.html" id="accounting">Accounting</a>
+        
+    </header>
+    <br>
+    <br>
     
-<header>
-    <div class="topnav">
-        <a  href="index.html">Home</a>
-        <a class="active" href="accounting.html">Accounting</a>
-    </div>
-</header>
+    <section>
+        <table id="tableID">
+            <tr>
+                <th> Department Name</th>
+                <th> Number of employees in each department</th>
+                <th> Average salary of the department</th>
+                <th>Total salary</th>
+            </tr>
+        </table>
+    </section>
+
+      <footer class="footer">
+        <table id="tableFooter">
+            <tr>
+                <th> Total Number of employees</th>
+                <th> Average salary for all departments</th>
+                <th> Total salary for all departments</th>
+                
+            </tr>
+        </table>
+        <p>&copy; 2022 ASAC  All rights reserved </p>
+    </footer>
+
+    <script src="./accounting.js"></script>
+
 
 </body>
 </html>
